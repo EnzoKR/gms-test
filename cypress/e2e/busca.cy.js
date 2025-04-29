@@ -10,7 +10,7 @@ describe('US-01-Funcionalidade: Busca de Filmes', () => {
   })
 
   it('Deve buscar filme com sucesso', () => {
-    cy.get('#search-input').type('Matrix-teste-invalido')
+    cy.get('#search-input').type('Matrix')
     cy.get('#search-button').click()
     cy.get('#results-section').should('contain', 'Matrix')
   })
